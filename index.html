@@ -3,88 +3,111 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>LensFocus - Capturing Moments, Creating Memories</title>
-    <link rel="stylesheet" href="../css/reset.css" />
-    <link rel="stylesheet" href="../css/styles.css" />
-    <link rel="stylesheet" href="../css/animations.css" />
-    <script src="../js/main.js" defer></script>
-    <script src="../js/parallax.js" defer></script>
-    <script src="../js/3d-effects.js" defer></script>
+    <title>My Photography</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
   </head>
 
   <body>
-    <header>
-      <nav class="navbar">
-        <div class="logo">*log</div>
-        <ul class="nav-links">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="portfolio.html">Portfolio</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-        <div class="language">la</div>
-        <button id="dark-mode-toggle">Toggle Dark Mode</button>
-      </nav>
+    <!-- Navbar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <h1 class="logo">myPhoto</h1>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#hero">Home</a></li>
+            <li><a href="#benefits">Benefits</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#pricing">Pricing</a></li>
+          </ul>
+        </nav>
+      </div>
     </header>
 
-    <section id="home" class="hero parallax fade-in-section">
-      <div class="hero-content">
-        <h1>LensFocus</h1>
-        <h2>Capturing Moments, Creating Memories.</h2>
+    <!-- Hero -->
+    <section id="hero" class="hero">
+      <div class="hero-content" data-aos="fade-up">
+        <h2>Capture Your World in Style</h2>
         <p>
-          Specializing in evocative portraiture, breathtaking landscapes, and
-          timeless event photography, LensFocus transforms fleeting moments into
-          lasting art. Let's create something beautiful together.
+          Photography that tells your story in the most artistic way possible.
         </p>
+        <a href="mailto:youremail@example.com" class="btn">Book Now</a>
       </div>
     </section>
 
-    <section id="about" class="meet-section fade-in-section">
-      <h2>Meet LensFocus</h2>
-      <p>
-        LensFocus is more than just a photography studio; it's a passion project
-        dedicated to capturing the raw beauty of life through the lens. With a
-        keen eye for detail and a heart for storytelling, we specialize in
-        creating images that resonate, evoke emotion, and stand the test of
-        time.
-      </p>
-    </section>
-
-    <section id="portfolio" class="featured-works fade-in-section">
-      <h2>Our Featured Works</h2>
-      <div class="gallery">
-        <!-- Some featured, but full in portfolio.html -->
-        <div class="card" data-tilt data-category="landscapes">
-          <img
-            src="https://images.unsplash.com/photo-1506905925346-21bda4d32df4"
-            alt="Golden Hour Peaks"
-          />
-          <div class="card-content">
-            <h3>Golden Hour Peaks</h3>
-            <p>Landscapes</p>
-          </div>
+    <!-- Membership Benefits -->
+    <section id="benefits" class="benefits">
+      <h2 data-aos="fade-up">Membership Benefits</h2>
+      <div class="benefit-cards">
+        <div class="benefit-card" data-aos="zoom-in">
+          <img src="images/benefit1.jpg" alt="Benefit 1" />
+          <h3>Exclusive Access</h3>
+          <p>Get behind-the-scenes content and premium shots.</p>
         </div>
-        <!-- Add a few more -->
+        <div class="benefit-card" data-aos="zoom-in">
+          <img src="images/benefit2.jpg" alt="Benefit 2" />
+          <h3>Personal Shoots</h3>
+          <p>Priority booking and discounted sessions.</p>
+        </div>
+        <div class="benefit-card" data-aos="zoom-in">
+          <img src="images/benefit3.jpg" alt="Benefit 3" />
+          <h3>Prints & Merch</h3>
+          <p>Exclusive access to limited edition prints.</p>
+        </div>
       </div>
     </section>
 
-    <section class="cta fade-in-section">
-      <h2>Ready to Capture Your Moment?</h2>
-      <a
-        href="https://wa.me/1234567890?text=I'd%20like%20to%20book%20a%20session"
-        id="book-session"
-        class="button"
-        >Book a Session</a
-      >
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+      <h2 data-aos="fade-up">Gallery</h2>
+      <div class="gallery-grid">
+        <img
+          src="images/gallery1.jpg"
+          alt="Gallery Image 1"
+          data-aos="fade-up"
+        />
+        <img
+          src="images/gallery2.jpg"
+          alt="Gallery Image 2"
+          data-aos="fade-up"
+        />
+        <img
+          src="images/gallery3.jpg"
+          alt="Gallery Image 3"
+          data-aos="fade-up"
+        />
+        <img
+          src="images/gallery4.jpg"
+          alt="Gallery Image 4"
+          data-aos="fade-up"
+        />
+      </div>
     </section>
 
-    <footer id="contact">
-      <div class="footer-content">
-        <div>Navigation</div>
-        <div><a href="mailto:info@lensfocus.com">Contact</a></div>
-        <div>Connect</div>
-        <div class="social-icons">☰ ✓ ln</div>
+    <!-- Pricing -->
+    <section id="pricing" class="pricing">
+      <h2 data-aos="fade-up">Pricing</h2>
+      <div class="pricing-cards">
+        <div class="pricing-card" data-aos="fade-up">
+          <h3>Basic</h3>
+          <p>$99 / shoot</p>
+          <a href="mailto:youremail@example.com" class="btn">Book</a>
+        </div>
+        <div class="pricing-card" data-aos="fade-up">
+          <h3>Premium</h3>
+          <p>$299 / shoot</p>
+          <a href="mailto:youremail@example.com" class="btn">Book</a>
+        </div>
       </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <h1 class="footer-logo">myPhoto</h1>
+      <p>&copy; 2025 My Photography. All rights reserved.</p>
     </footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
